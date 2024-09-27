@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal - Me Calculator</title>
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/utiles.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_left">
+                <div class="logo">
+                    <a href="index.html" draggable="false">
+                        <img src="./images/logo.svg" alt="logo" draggable="false">
+                        <span>Cal-Me</span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav_middle">
+                <div class="search">
+                    <div class="input">
+                        <input type="text" placeholder="Search hear">
+                    </div>
+                    <div class="search_btn">
+                        <button id="Search_btn" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <select id="dropdown" name="dropdown">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Learn_C">Learn C</option>
+                        <option value="Learn_C#">Learn C#</option>
+                        <option value="Learn_C++">Learn C++</option>
+                        <hr>
+                        <option value="Learn_Javascript">Learn Javascript</option>
+                        <option value="Learn_Java">Learn Java</option>
+                    </select>
+                </ul>
+            </div>
+            <div class="nav_burger">
+                <button class="burger"><img src="./images/burger.svg" alt="icon"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="nav_middle">
+                <div class="search">
+                    <div class="input">
+                        <input type="text" placeholder="Search hear">
+                    </div>
+                    <div class="search_btn">
+                        <button id="Search_btn" type="submit"><img src="./images/search_icon.svg"alt="icon"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_right">
+                <ul class="ul_ha">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <select id="dropdown" name="dropdown">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Learn_C">Learn C</option>
+                        <option value="Learn_C#">Learn C#</option>
+                        <option value="Learn_C++">Learn C++</option>
+                        <hr>
+                        <option value="Learn_Javascript">Learn Javascript</option>
+                        <option value="Learn_Java">Learn Java</option>
+                    </select>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main_outline">
+                <div class="calculator_body">
+                    <div class="option_outline">
+                        <span>Copyright &copy; Shirsendu Munshi.</span>
+                    </div>
+                    <div class="scrine">
+                        <input id="inputS" type="text">
+                    </div>
+                    <div class="keypad">
+
+                        <div class="first_row">
+                            <div class="function"><button class="button ">%</button></div>
+                            <div class="function"><button class="button ">CE</button></div>
+                            <div class="function"><button class="button ">C</button></div>
+                        </div>
+
+                        <div class="right_column">
+                            <div class="operators"><button class="button ">/</button></div>
+                            <div class="operators"><button class="button ">*</button></div>
+                            <div class="operators"><button class="button ">-</button></div>
+                            <div class="operators"><button class="button ">+</button></div>
+                            <div class="operators"><button class="button delete">delete</button></div>
+                        </div>
+
+                        <div class="number_keys">
+                            <div class="numbers number_1"><button class="button ">1</button></div>
+                            <div class="numbers number_2"><button class="button ">2</button></div>
+                            <div class="numbers number_3"><button class="button ">3</button></div>
+                            <div class="numbers number_4"><button class="button ">4</button></div>
+                            <div class="numbers number_5"><button class="button ">5</button></div>
+                            <div class="numbers number_6"><button class="button ">6</button></div>
+                            <div class="numbers number_7"><button class="button ">7</button></div>
+                            <div class="numbers number_8"><button class="button ">8</button></div>
+                            <div class="numbers number_9"><button class="button ">9</button></div>
+                            <div class="numbers number_0"><button class="button ">+/-</button></div>
+                            <div class="numbers number_0"><button class="button ">0</button></div>
+                            <div class="numbers number_0"><button class="button ">=</button></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./logic/index.js"></script>
+</body>
+
+</html>

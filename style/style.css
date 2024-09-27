@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #122738;
+    height: 8vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav .nav_left{
+    width: 10vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav_left .logo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav_left .logo a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav .nav_left .logo a img{
+    height: 50%;
+    width: 100%;
+    object-fit: contain;
+    filter: invert(1);
+}
+nav .nav_middle{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav_middle .search{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+    border: 2px solid #fff;
+    overflow: hidden;
+    width: 95%;
+}
+
+nav .nav_middle .search .input{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+nav .nav_middle .search .input input{
+    width: 21vw;
+    height: 4vh;
+    text-align: center;
+    background-color: #212e35;
+    color: #fff;
+    border: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    outline: none;
+}
+nav .nav_middle .search .input input:focus{
+    background-color: #15232c;
+}
+
+nav .nav_middle .search .search_btn{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav_middle .search .search_btn button{
+    width: 9vw;
+    height: 4vh;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background: #2e4d66;
+    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5), inset 0 -15px 15px rgba(0, 0, 0, 0.5), 0 -9px 15px rgba(225, 225, 225, 0.3), inset 0 15px 32px rgba(225, 225, 225, 0.3);
+}
+
+nav .nav_middle .search .search_btn button:hover{
+    background-color: #1e303f;
+}
+nav .nav_middle .search .search_btn button:active{
+    background-color: #105212;
+}
+
+nav .nav_right{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav_right ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav .nav_right ul li {
+    height: 4vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 2vw;
+    background: #2e4d66;
+    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5), inset 0 -15px 15px rgba(0, 0, 0, 0.5), 0 -9px 15px rgba(225, 225, 225, 0.3), inset 0 15px 32px rgba(225, 225, 225, 0.3);
+}
+nav .nav_right ul li:hover {
+    background-color: #1e303f;
+}
+nav .nav_right ul li:active {
+    background-color: #105212;
+}
+nav .nav_right ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav_right ul select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../images/dropdown_icon.svg"),#2e4d66;
+    background-repeat: no-repeat;
+    background-position: right 8px top 50%;
+    padding-right: 20px;
+    height: 50%;
+    width: 10vw;
+    border: 2px solid transparent;
+    border-radius: 2vw;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5), inset 0 -15px 15px rgba(0, 0, 0, 0.5), 0 -9px 15px rgba(225, 225, 225, 0.3), inset 0 15px 32px rgba(225, 225, 225, 0.3);
+}
+
+nav .nav_right ul select:hover{
+    background-color: #1e303f;
+}
+
+nav .nav_right ul select:focus{
+    background-color: #105212;
+}
+
+
+
+.sidebar{
+    width: 30vw;
+    height: 92vh;
+    overflow: hidden;
+    background-color: #15232c;
+    display: none;
+}
+.nav_middle{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_middle .search{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+    border: 2px solid #fff;
+    overflow: hidden;
+    width: 100%;
+}
+
+.nav_middle .search .input{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.nav_middle .search .input input{
+    width: 100%;
+    height: 4vh;
+    text-align: center;
+    background-color: #212e35;
+    color: #fff;
+    border: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    outline: none;
+}
+.nav_middle .search .input input:focus{
+    background-color: #15232c;
+}
+
+.nav_middle .search .search_btn{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_middle .search .search_btn button{
+    width: 100%;
+    height: 4vh;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background: #2e4d66;
+    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5), inset 0 -15px 15px rgba(0, 0, 0, 0.5), 0 -9px 15px rgba(225, 225, 225, 0.3), inset 0 15px 32px rgba(225, 225, 225, 0.3);
+}
+
+.nav_middle .search .search_btn button:hover{
+    background-color: #1e303f;
+}
+.nav_middle .search .search_btn button:active{
+    background-color: #105212;
+}
+
+.nav_right{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_right .ul_ha{
+    width: 100%;
+    height: 40vh;
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.nav_right ul li {
+    height: 4vh;
+    width: 90%;
+    margin: 4vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 2vw;
+    background: #2e4d66;
+    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5), inset 0 -15px 15px rgba(0, 0, 0, 0.5), 0 -9px 15px rgba(225, 225, 225, 0.3), inset 0 15px 32px rgba(225, 225, 225, 0.3);
+}
+.nav_right ul li:hover {
+    background-color: #1e303f;
+}
+.nav_right ul li:active {
+    background-color: #105212;
+}
+.nav_right ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_right ul select {
+    height: 5vh;
+    width: 100%;
+    margin: 0 2vh;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../images/dropdown_icon.svg"),#2e4d66;
+    background-repeat: no-repeat;
+    background-position: right 8px top 50%;
+    padding-right: 20px;
+    border: 2px solid transparent;
+    border-radius: 2vw;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5), inset 0 -15px 15px rgba(0, 0, 0, 0.5), 0 -9px 15px rgba(225, 225, 225, 0.3), inset 0 15px 32px rgba(225, 225, 225, 0.3);
+}
+
+.nav_right ul select:hover{
+    background-color: #1e303f;
+}
+
+.nav_right ul select:focus{
+    background-color: #105212;
+}
+.nav_burger{
+    display: none;
+}
+.nav_burger button{
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}

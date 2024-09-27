@@ -1,0 +1,10 @@
+.left{
+    left: 0!important;
+}
+.delete{
+    color: transparent!important;
+    background: url("../images/delete.svg")!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    font-size: 1rem!important;
+}

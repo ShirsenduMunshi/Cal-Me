@@ -1,0 +1,41 @@
+@media screen and (max-width: 800px) {
+    nav .nav_right {
+        display: none !important;
+    }
+    nav{
+        justify-content: space-between !important;
+    }
+    .sidebar{
+        display: block!important;
+    }
+    .main_outline {
+        width: 50vw!important;
+    }
+}
+@media screen and (max-width: 660px) {
+    nav .nav_middle {
+        display: none !important;
+    }
+    nav .nav_left{
+        width: fit-content !important;
+    }
+    .main_outline {
+        width: 70vw!important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .sidebar{
+        position: absolute;
+        z-index: 100;
+        left: -100vw;
+        transition: all 0.5s ease-in-out;
+        width: 70vw !important;
+    }
+    .nav_burger{
+        display: block!important;
+    }
+    .nav_burger button{
+        display: block!important;
+    }
+}
